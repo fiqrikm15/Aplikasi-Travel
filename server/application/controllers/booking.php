@@ -24,7 +24,7 @@ class Booking extends REST_Controller
     function index_post()
     {
         $id_user = $this->post('id_user');
-        $asal_kota = $this->post('asal_kota');
+        $kota_asal = $this->post('kota_asal');
         $kota_tujuan = $this->post('kota_tujuan');
         $waktu_berangkat = $this->post('waktu_berangkat');
         $no_kursi = $this->post('no_kursi');
@@ -35,7 +35,7 @@ class Booking extends REST_Controller
 
         $pesan = array(
             'id_user' => $id_user,
-            'asal_kota' => $asal_kota,
+            'kota_asal' => $kota_asal,
             'kota_tujuan' => $kota_tujuan,
             'waktu_berangkat' => $waktu_berangkat,
             'no_kursi' => $no_kursi,
