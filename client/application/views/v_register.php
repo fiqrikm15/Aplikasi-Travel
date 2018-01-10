@@ -28,7 +28,7 @@
     <div class="row" style="margin: 20px;">
         <div class="col-4">Jenis Kelamin</div>
         <div class="col-8">
-            <select name="jenis_kelamin" class="form-control form-control-sm">
+            <select name="jenis_kelamin" class="custom-select">
                 <option value="P">Pria</option>
                 <option value="W">Wanita</option>
             </select>
