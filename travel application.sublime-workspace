@@ -1,0 +1,219 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"foreach\tforeach …"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/rest_client/application/views/edit_buku.php",
+		"/C/xampp/htdocs/rest_client/application/controllers/buku.php",
+		"/C/xampp/htdocs/rest_client/application/views/list_buku.php",
+		"/C/xampp/htdocs/rest_client/application/views/form_input.php",
+		"/C/xampp/htdocs/rest_client/application/config/autoload.php",
+		"/C/xampp/htdocs/uas/rest_client/application/controllers/Login.php",
+		"/C/xampp/htdocs/uas/rest_client/application/controllers/Registrasi.php",
+		"/C/xampp/htdocs/uas/rest_server/application/controllers/Login.php",
+		"/C/Users/War Lock/Downloads/travel_db.sql",
+		"/C/Users/War Lock/Downloads/Compressed/codeigniter-curl-master/config/autoload.php",
+		"/C/xampp/htdocs/rest_server/[]Script/mahasiswa.php",
+		"/C/xampp/htdocs/rest_server/index.php",
+		"/C/xampp/htdocs/rest_server/.gitignore",
+		"/C/xampp/htdocs/rest_server/.editorconfig",
+		"/C/xampp/htdocs/rest_server/.codeclimate.yml",
+		"/C/xampp/htdocs/rest_server/application/config/database.php",
+		"/D/Download/indonesia.sql",
+		"/C/xampp/htdocs/travel/server/index.php",
+		"/C/xampp/htdocs/travel/_travel.sql",
+		"/C/xampp/htdocs/rest_server/application/controllers/Book.php",
+		"/C/Users/War Lock/Desktop/city.php",
+		"/C/Users/War Lock/Desktop/MBooking.php",
+		"/C/Users/War Lock/Desktop/booking.php",
+		"/C/xampp/htdocs/rest_server/application/views/rest_server.php",
+		"/C/xampp/htdocs/rest_server/application/views/index.html",
+		"/C/xampp/htdocs/rest_server/application/views/welcome_message.php",
+		"/C/xampp/htdocs/rest_server/application/config/config.php",
+		"/C/xampp/htdocs/rest_server/application/config/autoload.php",
+		"/C/Users/War Lock/Downloads/insert_multiple_tables_db.sql",
+		"/C/xampp/htdocs/bahan_ajar/uts_interoperability/a_fiqri_khoirul_mutaqin/client/data_buku.php",
+		"/C/xampp/htdocs/rest_client/application/[]Dari BB/buku.php",
+		"/C/xampp/htdocs/rest_client/application/config/database.php",
+		"/D/Development/PHP Backup/rest_server.sql",
+		"/C/xampp/htdocs/rest_server/application/controllers/Rest_server.php",
+		"/C/Users/War Lock/Desktop/a.sql"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "travel application.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"auto",
+				"application\\config\\autoload.php"
+			],
+			[
+				"edi",
+				"application\\views\\edit_buku.php"
+			],
+			[
+				"buku",
+				"application\\[]Dari BB\\buku.php"
+			],
+			[
+				"admin",
+				"application\\controllers\\admin.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 261.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
