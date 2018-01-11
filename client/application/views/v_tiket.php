@@ -1,3 +1,9 @@
+<?php
+$session = $this->session->userdata('session');
+$has_session = $session != null;
+$user_id = null;    
+?>
+
 <html>
 <head>
     <title></title>
@@ -12,6 +18,10 @@
 <div class="container" id="pesan-form">
     <h2 align="center" style="margin-top: 10px;">Pesan Tiket</h2>
     <br>
+
+    <div class="row" style="margin: 20px;">
+        <input type="hidden" name="id_user" value="<?php if($has_session) echo $session->id; ?>">
+    </div>
 
     <div class="row" style="margin: 20px;">
         <div class="col-4">Kota Keberangkatan</div>

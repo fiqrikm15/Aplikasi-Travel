@@ -47,7 +47,7 @@ class Booking extends REST_Controller
         $id_pesanan = $this->MBooking->create('pesanan', $pesan);
 
         $tiket = array(
-            'no_tiket' => rand(100000, 20000),
+            'no_tiket' => md5(rand(1000, 20000)),
             'id_pesan' => $id_pesanan
         );
 

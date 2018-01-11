@@ -7,7 +7,6 @@ class Booking extends CI_Controller
 	function __construct()
 	{
 		parent:: __construct();
-
 		$this->API = "http://localhost/travel/server/index.php/booking";
 	}
 
@@ -15,11 +14,20 @@ class Booking extends CI_Controller
 	{
 		$data['kota_asal'] = json_decode($this->curl->simple_get("http://localhost/travel/server/index.php/kota_asal"));
 		$data['kota_tujuan'] = json_decode($this->curl->simple_get("http://localhost/travel/server/index.php/kota_tujuan"));
-		$this->load->view('v_tiket', $data);
+
+		$session = $this->session->userdata('session');
+		$has_session = $session != null;
+
+		if($has_session)
+			$this->load->view('v_tiket', $data);
+		else
+			redirect('user');
 	}
 
 	function add_action()
 	{
+		$id_user = $this->input->post('id_user');
+
 		$kota_asal = $this->input->post('kota_asal');
 		$kota_tujuan = $this->input->post('kota_tujuan');
 
@@ -52,7 +60,7 @@ class Booking extends CI_Controller
 		}
 
 		$data = array(
-			'id_user' => '3',
+			'id_user' => $id_user,
 			'kota_asal' => $kota_asal,
 			'kota_tujuan' => $kota_tujuan,
 			'waktu_berangkat' => $waktu_berangkat,
