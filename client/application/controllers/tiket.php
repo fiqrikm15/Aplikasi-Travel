@@ -21,8 +21,25 @@ class Tiket extends CI_Controller
 			$this->load->view('v_list_tiket', $data);
 		else
 			redirect('user');
-		
-		//$this->load->view('v_list_tiket', $data);
+	}
 
+	function detail()
+	{
+		
+	}
+
+	function delete()
+	{
+		$id = $this->uri->segment(3);
+    	$data = array('id'=>$id);
+    	$delete = $this->curl->simple_delete($this->API,$data);
+		
+		if($delete){
+			echo "Hapus Data Sukses";
+		}else{
+			echo "Hapus Data Gagal";
+		}
+		$this->session->set_flashdata('message',$message);
+        redirect('tiket');
 	}
 }

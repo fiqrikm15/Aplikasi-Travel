@@ -29,4 +29,21 @@ class Tiket extends REST_Controller
 
         return $this->response($data, 200);
     }
+
+    function index_delete()
+    {
+        $id = $this->delete('id');
+
+        $book = $this->db->get_where('pesanan',array('id'=>$id));
+
+        if ($book->num_rows()>0) {
+            $this->db->where('id',$id);
+            $this->db->delete('pesanan');
+            $data = array('status'=>'berhasil menghapus data');
+            $this->response($data,200);
+        }else{
+            $data = array('status'=>'data tidak ditemukan');
+            $this->response($data,502);
+        }
+    }
 }

@@ -33,24 +33,25 @@ $user_id = null;
 			$i = 0;
 			foreach ($tiket as $tk): 
 				if($tk->id_user == $session->id):
-			?>
-				<tr>
-					<td><?php echo $i+1;?></td>
-					<td><?php echo $tk->nama;?></td>
-					<td><?php echo $tk->kota_tujuan;?></td>
-					<td><?php echo $tk->no_kursi;?></td>
-					<td><?php echo $tk->waktu_berangkat;?></td>
-					<td><?php echo "Rp.".$tk->total_bayar;?></td>
-					<td>
-						<?php
-						echo anchor('buku/add','Detail', "class='btn btn-success btn-sm' style='margin-right:10px;'");
-						echo anchor('login/logout','Hapus', "class='btn btn-danger btn-sm'");
-						?>
-					</td>
-				</tr>	
-			<?php 
-			$i ++;
-		endif;
+					if($tk->batas_waktu >= date('Y-m-d H:i:s')): ?>
+						<tr>
+							<td><?php echo $i+1;?></td>
+							<td><?php echo $tk->nama;?></td>
+							<td><?php echo $tk->kota_tujuan;?></td>
+							<td><?php echo $tk->no_kursi;?></td>
+							<td><?php echo $tk->waktu_berangkat;?></td>
+							<td><?php echo "Rp.".$tk->total_bayar;?></td>
+							<td>
+								<?php
+								echo anchor('tiket/detail','Detail', "class='btn btn-success btn-sm' style='margin-right:10px;'");
+								echo anchor('tiket/delete/'.$tk->id,'Batal Pesan', "class='btn btn-danger btn-sm'");
+								?>
+							</td>
+						</tr>
+					<?php
+					$i ++;
+				endif;
+				endif;
 			endforeach; 
 			?>
 		</tbody>	

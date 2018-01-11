@@ -12,7 +12,14 @@ class User extends CI_Controller
 
 	function index()
 	{
-		$this->load->view('v_login');
+		$session = $this->session->userdata('session');
+		$has_session = $session != null;
+
+		
+		if($has_session)
+			redirect('booking');
+		else
+			$this->load->view('v_login');
 	}
 
 	function login()
