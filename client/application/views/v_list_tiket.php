@@ -43,7 +43,7 @@ $user_id = null;
 							<td><?php echo "Rp.".$tk->total_bayar;?></td>
 							<td>
 								<?php
-								echo anchor('tiket/detail','Detail', "class='btn btn-success btn-sm' style='margin-right:10px;'");
+								echo anchor('tiket/detail/'.$tk->id,'Detail', "class='btn btn-success btn-sm' style='margin-right:10px;'");
 								echo anchor('tiket/delete/'.$tk->id,'Batal Pesan', "class='btn btn-danger btn-sm'");
 								?>
 							</td>

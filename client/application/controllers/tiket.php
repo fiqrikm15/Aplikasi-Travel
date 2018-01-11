@@ -25,7 +25,12 @@ class Tiket extends CI_Controller
 
 	function detail()
 	{
-		
+		$id = $this->uri->segment(3);
+
+		$data['id'] = $id;
+		$data['tiket'] = json_decode($this->curl->simple_get($this->API));
+
+		$this->load->view('v_detail', $data);
 	}
 
 	function delete()
