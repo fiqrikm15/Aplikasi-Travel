@@ -1,3 +1,9 @@
+<?php
+$session = $this->session->userdata('session');
+$has_session = $session != null;
+$user_id = null;    
+?>
+
 <html>
 <head>
     <title></title>
@@ -5,7 +11,49 @@
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css"/>
     <script src="<?php echo base_url() ?>assets/js/bootstrap.js"></script>
     <script src="<?php echo base_url() ?>assets/js/jquery-1.11.0.js"></script>
+
+    <script type="text/javascript">
+	function printDiv(divName) {
+	    var printContents = document.getElementById(divName).innerHTML;
+	    var originalContents = document.body.innerHTML;
+	    document.body.innerHTML = printContents;
+	    window.print();
+	    document.body.innerHTML = originalContents;
+	}
+	</script>
+
 </head>
+<body>
+
+	<header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">SM Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav mr-auto">
+            	<li class="nav-item">
+                  <?php echo anchor('','Beranda', "class='nav-link'");?>
+                </li>
+            <li class="nav-item">
+              <?php echo anchor('booking','Pesan Tiket', "class='nav-link'");?>
+            </li>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <?php if($has_session): ?>
+                <li class="nav-item">
+                <?php echo anchor('user/logout','Logout', "class='nav-link'");?>
+                </li>
+            <?php else: ?>
+                <li class="nav-item">
+                  <?php echo anchor('register','Register', "class='nav-link'");?>
+                </li>
+            <?php endif; ?>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br><br><br>
 
 <div class="container" id="data-tiket">
 	<div id="detail-tiket">
@@ -54,8 +102,8 @@
 		?>	
 	</div>
 	<br>
+	<input type="button" class='btn btn-success btn-sm' onclick="printDiv('detail-tiket')" value="Cetak Tiket" />
 	<?php
-	echo anchor('tiket/detail/'.$tk->id,'Simpan', "class='btn btn-success btn-sm' style='margin-right:10px;'");
 	echo anchor('tiket','Kembali', "class='btn btn-danger btn-sm'");
 	?>
 </div>

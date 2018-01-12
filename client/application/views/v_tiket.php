@@ -14,6 +14,39 @@ $user_id = null;
 </head>
 
 <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">SM Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                  <?php echo anchor('','Beranda', "class='nav-link'");?>
+                </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="tiket">Daftar Tiket</a>
+            </li>
+            <?php if($has_session): ?>
+                <li class="nav-item">
+                <a class="nav-link" href="user/logout">Logout</a>
+                </li>
+            <?php else: ?>
+                <li class="nav-item">
+                <a class="nav-link" href="index.php/user">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.php/register">Daftar Member</a>
+                </li>
+            <?php endif; ?>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <br><br><br>
 <?php echo form_open('Booking/add_action'); ?>
 <div class="container" id="pesan-form">
     <h2 align="center" style="margin-top: 10px;">Pesan Tiket</h2>
@@ -121,7 +154,7 @@ $user_id = null;
         <div class="col-4"></div>
         <div class="col-8">
             <input class="btn btn-primary btn-sm" type="submit" value="Pesan" name="register" align="right">
-            <a href="" class="btn btn-danger btn-sm">Batal</a>
+            <?php echo anchor('','Batal', "class='btn btn-danger btn-sm'");?>
         </div>
     </div>
 </div>

@@ -1,3 +1,9 @@
+<?php
+$session = $this->session->userdata('session');
+$has_session = $session != null;
+$user_id = null;    
+?>
+
 <html>
 <head>
     <title></title>
@@ -8,6 +14,32 @@
 </head>
 
 <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">SM Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <?php if($has_session): ?>
+                <li class="nav-item">
+                <?php echo anchor('user/logout','Logout', "class='nav-link'");?>
+                </li>
+            <?php else: ?>
+                <li class="nav-item">
+                  <?php echo anchor('','Beranda', "class='nav-link'");?>
+                </li>
+                <li class="nav-item">
+                  <?php echo anchor('register','Daftar Member', "class='nav-link'");?>
+                </li>
+            <?php endif; ?>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <br><br><br>
 <?php echo form_open('User/login'); ?>
     <div class="container" id="register-form">
         <h2 align="center" style="margin-top: 10px;">Login Member</h2>
@@ -26,8 +58,8 @@
         <div class="row" style="margin: 20px;">
             <div class="col-4"></div>
             <div class="col-8">
-                <input class="btn btn-primary btn-sm" type="submit" value="Pesan" name="register" align="right">
-                <a href="" class="btn btn-danger btn-sm">Batal</a>
+                <input class="btn btn-primary btn-sm" type="submit" value="Login" name="login" align="right">
+                <?php echo anchor('','Batal', "class='btn btn-danger btn-sm'");?>
             </div>
         </div>
     </div>

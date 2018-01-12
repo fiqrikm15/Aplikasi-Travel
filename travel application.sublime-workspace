@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"has",
+				"has_session"
+			],
+			[
+				"waktu",
+				"waktu_berangkat"
+			],
+			[
+				"meni",
+				"menit_berangkat"
+			],
+			[
+				"jam",
+				"jam_berangkat"
+			],
+			[
+				"tangg",
+				"tanggal_berangkat"
+			],
+			[
+				"kota_",
+				"kota_asal"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"con",
+				"condition"
+			],
+			[
 				"for",
 				"foreach\tforeach …"
 			]
@@ -11,6 +55,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "client/application/views/welcome_message.php",
+			"settings":
+			{
+				"buffer_size": 6137,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -19,12 +72,12 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 404.0
 	},
 	"console":
 	{
@@ -42,16 +95,74 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/travel",
+		"/C/xampp/htdocs/travel/client",
+		"/C/xampp/htdocs/travel/client/application",
+		"/C/xampp/htdocs/travel/client/application/views"
+	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/travel/client/application/views/v_login.php",
+		"/C/xampp/htdocs/travel/server/application/views/welcome_message.php",
+		"/C/xampp/htdocs/travel/server/application/models/MBooking.php",
+		"/C/xampp/htdocs/travel/server/application/controllers/booking.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/user.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/tiket.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/register.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/booking.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/home.php",
+		"/C/xampp/htdocs/travel/client/application/views/welcome_message.php",
+		"/C/xampp/htdocs/travel/client/application/views/v_tiket.php",
+		"/C/xampp/htdocs/travel/server/application/controllers/kota_tujuan.php",
+		"/C/xampp/htdocs/travel/server/application/controllers/login.php",
+		"/C/xampp/htdocs/travel/server/application/controllers/tiket.php",
+		"/C/xampp/htdocs/travel/server/application/controllers/kota_asal.php",
+		"/C/xampp/htdocs/travel/client/application/views/v_register.php",
+		"/C/xampp/htdocs/travel/client/application/views/v_detail.php",
+		"/C/xampp/htdocs/travel/client/application/views/v_list_tiket.php",
+		"/C/xampp/htdocs/travel/client/application/index.html",
+		"/C/Users/War Lock/AppData/Local/Temp/Rar$DIa0.865/autoload.inc.php",
+		"/C/Users/War Lock/Downloads/Compressed/dompdf/src/Dompdf.php",
+		"/C/xampp/htdocs/travel/client/application/libraries/m_pdf.php",
+		"/C/xampp/htdocs/travel/client/application/config/config.php",
+		"/C/xampp/htdocs/travel/client/application/libraries/PdfGenerator.php",
+		"/C/Users/War Lock/Desktop/M_pdf.php",
+		"/C/xampp/htdocs/travel/client/application/config/autoload.php",
+		"/C/xampp/htdocs/travel/client/application/libraries/M_pdf.php",
+		"/C/xampp/htdocs/travel/client/application/third_party/mpdf/classes/bmp.php",
+		"/C/xampp/htdocs/travel/client/assets/css/style.css",
+		"/C/Users/War Lock/Downloads/Compressed/dompdf-master/dompdf-master/README.md",
+		"/C/xampp/htdocs/travel/client/composer.json",
+		"/C/xampp/htdocs/travel/client/application/views/errors/v_detail.php",
+		"/C/xampp/htdocs/toko_baju/rest_server_baju/application/controllers/buku.php",
+		"/C/xampp/htdocs/toko_baju/rest_server_buku/application/controllers/buku.php",
+		"/C/xampp/htdocs/uas/rest_server/application/controllers/Book.php",
+		"/C/Users/War Lock/Desktop/Block Host.cmd",
+		"/C/xampp/htdocs/uas/rest_client/application/controllers/Buku.php",
+		"/C/xampp/htdocs/uas/rest_client/application/views/list_buku.php",
+		"/C/xampp/htdocs/uas/rest_client/application/controllers/Login.php",
+		"/C/xampp/htdocs/uas/rest_server/application/controllers/Login.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/auth.php",
+		"/C/xampp/htdocs/uas/rest_client/application/views/login.php",
+		"/C/xampp/htdocs/travel/server/application/controllers/user.php",
+		"/C/xampp/htdocs/travel/client/application/views/login.php",
+		"/C/xampp/htdocs/travel/client/application/controllers/login.php",
+		"/C/xampp/htdocs/toko_baju/rest_client_baju/application/controllers/admin.php",
+		"/C/xampp/htdocs/toko_baju/rest_client_baju/application/views/list_admin.php",
+		"/C/xampp/htdocs/toko_baju/rest_client_baju/application/views/rest_server.php",
+		"/C/xampp/htdocs/toko_baju/rest_client_baju/application/controllers/buku.php",
+		"/C/xampp/htdocs/travel/server/application/views/index.html",
+		"/C/xampp/htdocs/toko_baju/rest_server_baju/application/controllers/baju.php",
+		"/C/xampp/htdocs/toko_baju/rest_server_baju/application/controllers/user.php",
+		"/C/xampp/htdocs/toko_baju/rest_server_baju/application/controllers/admin.php",
 		"/C/xampp/htdocs/rest_client/application/views/edit_buku.php",
 		"/C/xampp/htdocs/rest_client/application/controllers/buku.php",
 		"/C/xampp/htdocs/rest_client/application/views/list_buku.php",
 		"/C/xampp/htdocs/rest_client/application/views/form_input.php",
 		"/C/xampp/htdocs/rest_client/application/config/autoload.php",
-		"/C/xampp/htdocs/uas/rest_client/application/controllers/Login.php",
 		"/C/xampp/htdocs/uas/rest_client/application/controllers/Registrasi.php",
-		"/C/xampp/htdocs/uas/rest_server/application/controllers/Login.php",
 		"/C/Users/War Lock/Downloads/travel_db.sql",
 		"/C/Users/War Lock/Downloads/Compressed/codeigniter-curl-master/config/autoload.php",
 		"/C/xampp/htdocs/rest_server/[]Script/mahasiswa.php",
@@ -86,7 +197,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 104.0,
 		"where_history":
 		[
 		]
@@ -96,6 +207,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"?>\n",
+			">\n",
+			"\";\n",
+			".*\"\n",
+			"\t\t\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -113,8 +229,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "client/application/views/welcome_message.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1630,
+								1630
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -124,7 +271,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"layout":
 	{
@@ -166,6 +313,34 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"confi",
+				"client\\application\\config\\config.php"
+			],
+			[
+				"aut",
+				"client\\application\\config\\autoload.php"
+			],
+			[
+				"sty",
+				"client\\assets\\css\\style.css"
+			],
+			[
+				"styl",
+				"client\\assets\\css\\style.css"
+			],
+			[
+				"user",
+				"server\\application\\controllers\\user.php"
+			],
+			[
+				"regis",
+				"client\\application\\controllers\\register.php"
+			],
+			[
+				"booking",
+				"client\\application\\controllers\\booking.php"
+			],
 			[
 				"auto",
 				"application\\config\\autoload.php"
@@ -211,7 +386,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 261.0,
+	"side_bar_width": 336.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

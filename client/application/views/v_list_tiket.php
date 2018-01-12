@@ -12,7 +12,37 @@ $user_id = null;
     <script src="<?php echo base_url() ?>assets/js/bootstrap.js"></script>
     <script src="<?php echo base_url() ?>assets/js/jquery-1.11.0.js"></script>
 </head>
+<body>
+	<header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">SM Travel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav mr-auto">
+        	<li class="nav-item">
+                  <?php echo anchor('','Beranda', "class='nav-link'");?>
+                </li>
 
+            <li class="nav-item">
+              <?php echo anchor('booking','Pesan Tiket', "class='nav-link'");?>
+            </li>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <?php if($has_session): ?>
+                <li class="nav-item">
+                <?php echo anchor('user/logout','Logout', "class='nav-link'");?>
+                </li>
+            <?php else: ?>
+                <li class="nav-item">
+                  <?php echo anchor('registert','Register', "class='nav-link'");?>
+                </li>
+            <?php endif; ?>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <br><br><br>
 <div class="container" id="data-tiket">
 	<h2>Daftar Tiket Yang Dipesan</h2>
 	<br>
